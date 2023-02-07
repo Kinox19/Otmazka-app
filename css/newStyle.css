@@ -1,0 +1,221 @@
+@import './reset.css';
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color: #30323D;
+    font-family: 'Jost';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    color: #5C80BC;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 8px;
+}
+
+h2{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #5C80BC;
+    line-height: 1;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 4px;
+    margin-bottom: 100px;
+}
+
+section{
+    display: block;
+    margin: auto 30% ;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    width: 700px;
+    background-color: #30323D;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CDD1C4;
+    box-shadow: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #CDD1C4;
+    margin-bottom: 40px;
+}
+
+.input:focus{
+    border-bottom: 1px solid #E8C547;
+}
+
+.otmazkaWrapper{
+    margin-bottom:40px;
+    display: none;
+}
+
+.otmazka{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.btnCopy{
+    width: 454px;
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: medium;
+    display: none;
+    height: 53px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border: 2px solid #E8C547;
+    background-color: #30323D;
+    color: #E8C547;
+    margin-top: 8px;
+}
+
+.btnFindReason{
+    font-family: 'Jost';
+    height: 70px;
+    background: #E8C547;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    border: 0px solid;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-top: 40px;
+    width: 700px;
+}
+
+.btnFindReason:hover{
+    background: #968033;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+
+.btnChangeReason{
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #E8C547;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+.btnChangeReason:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+.footerText{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+    margin-top: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 72px;
+  }
+
+  .input{
+    width: 328px;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+  .otmazkaWrapper{
+    margin-bottom: 24px;
+}
+
+  .otmazka{
+    font-size: 28px;
+}
+
+  .btnCopy{
+    width: 328px;
+    font-size: 16px;
+    height: 36px;
+    margin-top: 8px;
+}
+
+  .btnFindReason{
+    height: 48px;
+    font-size: 24px;
+    margin-top: 24px;
+    width: 328px;
+}
+
+  .btnChangeReason{
+    font-size: 20px;
+    color: #E8C547;
+    margin-top: 12px;
+    margin-bottom: 128px;
+}
+
+.footerText{
+    font-size: 12px;
+}
+}
+
+
+
+/* для смартфонов — 320 px, 480 px и выше;
+для планшетов — 768 px и выше;
+для нетбуков — 1024 px и выше;
+для мониторов — 1280 px, 1600 px, 1920 px и выше. */

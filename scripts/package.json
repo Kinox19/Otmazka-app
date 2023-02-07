@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "otmazki-app-v1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "balaboba-api": "^1.0.0"
+  }
+}

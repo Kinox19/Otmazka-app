@@ -1,0 +1,18 @@
+/* Reset and base styles  */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    border: none;
+}
+
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+	display: block;
+}
