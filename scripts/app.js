@@ -24,36 +24,46 @@ const otmazkaWrapper = document.querySelector('.otmazkaWrapper');
 // });
 
 
-// input.addEventListener('keyup', () => {
-//   if (input.value.trim().length >= 1) {
-//     btnFindReason.disabled = false;
-//   } else {
-//     btnFindReason.disabled = true;
-//   }
-// });
 
-
-
-input.addEventListener("keyup", function () {
-  if (input.value === "") {
-    btnFindReason.setAttribute("disabled", true);
+input.addEventListener('keyup', () => {
+  if (input.value.trim() === '') {
+    btnFindReason.disabled = true;
   } else {
-    btnFindReason.removeAttribute("disabled");
+    btnFindReason.disabled = false;
+
+    // этот кусок кода позволяет стригерить кнопку нажав Enter
+    input.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        btnFindReason.click();
+      }
+    });
+    //
   }
 });
 
 btnFindReason.addEventListener("click", () => {
   otmazka.textContent = `${input.value.trim()}, потому что ${getRandomElement(reasons)}`;
+
+  copyBtn.style = '.btnCopy';
+  copyBtn.textContent = 'Скопировать отмазку';
+
   btnFindReasonCSS(input,otmazka,otmazkaWrapper,changeReason,btnFindReason,copyBtn);
 });
+
+
 
 changeReason.addEventListener("click", () => {
   input.style.display = 'initial';
   otmazka.style.display = 'none';
   otmazkaWrapper.style.display = 'none';
-  changeReason.style.display = 'none';
   btnFindReason.textContent = 'Найти причину';
+
+  copyBtn.style = '.btnCopy';
+  copyBtn.textContent = 'Скопировать отмазку';
   copyBtn.style.display = 'none';
+
+  changeReason.style.display = 'none';
 });
 
 copyBtn.addEventListener("click", () => {
