@@ -99,6 +99,12 @@ section{
     margin-top: 8px;
 }
 
+.btnCopy:hover{
+    cursor: pointer;
+    background-color: #E8C547;
+    color:#30323D;
+}
+
 .btnFindReason{
     font-family: 'Jost';
     height: 70px;
